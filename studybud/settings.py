@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # registerng the app 
     'base.apps.BaseConfig',
 
     'rest_framework',
