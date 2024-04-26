@@ -11,6 +11,7 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
+// defining that this application will use books.settings for default 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'books.settings')
 
 application = get_wsgi_application()
