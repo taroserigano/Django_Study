@@ -21,6 +21,7 @@ class Topic(models.Model):
 
 
 class Room(models.Model):
+    # if source data is deleted, the child  data is null 
     host = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     topic = models.ForeignKey(Topic, on_delete=models.SET_NULL, null=True)
     name = models.CharField(max_length=200)
