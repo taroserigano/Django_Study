@@ -55,6 +55,9 @@ class Book(models.Model):
     published_countries = models.ManyToManyField(Country, null=False)
 
     def get_absolute_url(self):
+
+        # calls the book-detail method in the view,
+        # will return the very details of the books  
         return reverse("book-detail", args=[self.slug])
 
     def __str__(self):
